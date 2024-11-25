@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDOYA - Services Logistiques Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">CEDOYA</div>
+            <div>
+                <a href="#accueil" class="mx-4 text-gray-600 hover:text-gray-900">Accueil</a>
+                <a href="#services" class="mx-4 text-gray-600 hover:text-gray-900">Services</a>
+                <a href="#expertise" class="mx-4 text-gray-600 hover:text-gray-900">Expertise</a>
+                <a href="#contact" class="mx-4 text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="#espace-client" class="mx-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Espace Client</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main class="pt-20">
+        <!-- Section Accueil -->
+        <section id="accueil" class="container mx-auto px-6 py-16 flex items-center">
+            <div class="w-1/2">
+                <h1 class="text-4xl font-bold mb-6 text-gray-900">Conservation & Location d'Œuvres d'Art</h1>
+                <p class="text-xl text-gray-700 mb-8">
+                    CEDOYA, votre partenaire expert en logistique et préservation d'œuvres précieuses.
+                </p>
+                <div>
+                    <a href="#services" class="bg-blue-600 text-white px-6 py-3 rounded-lg mr-4 hover:bg-blue-700">
+                        Découvrir nos Services
+                    </a>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <img src="/api/placeholder/600/400" alt="CEDOYA Services" class="rounded-lg shadow-xl">
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" class="bg-white py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <i data-feather="shield" class="mx-auto mb-4 text-blue-600"></i>
+                        <h3 class="font-bold mb-4">Stockage Sécurisé</h3>
+                        <p>Espaces climatisés et sécurisés pour conservation optimale.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <i data-feather="truck" class="mx-auto mb-4 text-blue-600"></i>
+                        <h3 class="font-bold mb-4">Transport Spécialisé</h3>
+                        <p>Logistique sur-mesure pour œuvres fragiles.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg text-center">
+                        <i data-feather="calendar" class="mx-auto mb-4 text-blue-600"></i>
+                        <h3 class="font-bold mb-4">Location Événementielle</h3>
+                        <p>Solutions flexibles pour événements prestigieux.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expertise -->
+        <section id="expertise" class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Notre Expertise</h2>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Savoir-Faire</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="mr-4 text-blue-600">✓</span> 
+                            Conservation scientifique
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-4 text-blue-600">✓</span>
+                            Sécurité intégrale
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-4 text-blue-600">✓</span>
+                            Logistique experte
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="/api/placeholder/600/400" alt="Expertise CEDOYA" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="bg-blue-600 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8">Contactez-nous</h2>
+                <form class="max-w-lg mx-auto">
+                    <input type="text" placeholder="Nom" class="w-full mb-4 p-3 rounded text-gray-800">
+                    <input type="email" placeholder="Email" class="w-full mb-4 p-3 rounded text-gray-800">
+                    <textarea placeholder="Votre message" class="w-full mb-4 p-3 rounded text-gray-800" rows="4"></textarea>
+                    <button type="submit" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100">
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Espace Client -->
+        <section id="espace-client" class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Espace Client</h2>
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+                <form>
+                    <input type="email" placeholder="Email" class="w-full mb-4 p-3 rounded border">
+                    <input type="password" placeholder="Mot de passe" class="w-full mb-4 p-3 rounded border">
+                    <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">
+                        Connexion
+                    </button>
+                    <a href="#" class="block text-center mt-4 text-blue-600">Mot de passe oublié ?</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            © 2024 CEDOYA - Services Logistiques d'Art
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
