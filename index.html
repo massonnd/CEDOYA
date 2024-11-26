@@ -1,118 +1,89 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEDOYA - Conciergerie Personnelle à Paris et Rhône-Alpes</title>
-    <meta name="description" content="CEDOYA : Services de conciergerie personnelle sur-mesure à Paris et en Rhône-Alpes. Simplifiez votre quotidien avec nos services professionnels.">
-    <meta name="keywords" content="conciergerie, services personnels, Paris, Rhône-Alpes, assistance personnelle, services sur-mesure">
+    <title>CEDOYA - Conciergerie Premium</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-        body {
-            font-family: 'Montserrat', sans-serif;
+    <script>
+        // Configuration Tailwind pour personnalisation
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cedoya-blue': '#2563EB',
+                        'cedoya-gray': '#F3F4F6'
+                    }
+                }
+            }
         }
-    </style>
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <header class="fixed w-full z-50 bg-white shadow-md">
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="logo-cedoya.png" alt="Logo CEDOYA" class="h-10 mr-3">
-                <span class="text-2xl font-bold text-blue-600">CEDOYA</span>
+            <div class="text-2xl font-bold text-cedoya-blue flex items-center">
+                <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12a1 1 0 11-2 0v-5a1 1 0 112 0v5zm-1-8a1 1 0 100-2 1 1 0 000 2z"/>
+                </svg>
+                CEDOYA
             </div>
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#services" class="hover:text-blue-600 transition">Nos Services</a></li>
-                <li><a href="#about" class="hover:text-blue-600 transition">Notre Concept</a></li>
-                <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+            <ul class="flex space-x-6">
+                <li><a href="#services" class="hover:text-cedoya-blue transition">Nos Services</a></li>
+                <li><a href="#about" class="hover:text-cedoya-blue transition">À Propos</a></li>
+                <li><a href="#contact" class="hover:text-cedoya-blue transition">Contact</a></li>
             </ul>
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-blue-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
         </nav>
     </header>
 
     <main class="pt-20">
         <section class="container mx-auto px-4 py-16 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                Votre Conciergerie Personnelle à Paris et Rhône-Alpes
-            </h1>
-            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                Des services sur-mesure pour simplifier votre quotidien et libérer votre temps
-            </p>
-            <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition inline-block">
+            <h1 class="text-4xl font-bold mb-6 text-gray-800">Votre Conciergerie Personnelle à Paris et en Rhône-Alpes</h1>
+            <p class="text-xl text-gray-600 mb-8">Des services sur-mesure pour simplifier votre quotidien</p>
+            <a href="#contact" class="bg-cedoya-blue text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
                 Contactez-nous
             </a>
         </section>
 
         <section id="services" class="container mx-auto px-4 py-16">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Nos Services</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nos Services</h2>
             
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Services détaillés -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="text-blue-600 text-4xl mb-4">🛒</div>
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900">Courses & Livraisons</h3>
+                    <div class="text-cedoya-blue text-4xl mb-4">🛒</div>
+                    <h3 class="text-xl font-semibold mb-4">Courses & Livraisons</h3>
                     <p class="text-gray-600">Courses personnelles, courses alimentaires, livraison de repas, récupération de colis.</p>
                 </div>
                 
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="text-blue-600 text-4xl mb-4">📅</div>
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900">Réservations</h3>
+                    <div class="text-cedoya-blue text-4xl mb-4">📅</div>
+                    <h3 class="text-xl font-semibold mb-4">Réservations</h3>
                     <p class="text-gray-600">Restaurants, spectacles, événements, transports, billets VIP, réservations de voyages.</p>
                 </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="text-blue-600 text-4xl mb-4">🏠</div>
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900">Services à Domicile</h3>
-                    <p class="text-gray-600">Ménage, pressing, petit bricolage, jardinage, services de réparation.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="text-blue-600 text-4xl mb-4">📋</div>
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900">Services Administratifs</h3>
-                    <p class="text-gray-600">Gestion de courrier, suivi administratif, prise de rendez-vous, traductions.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="text-blue-600 text-4xl mb-4">💆</div>
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900">Bien-être & Santé</h3>
-                    <p class="text-gray-600">Réservation de soins, coach sportif, séances de bien-être, livraison de médicaments.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                    <div class="text-blue-600 text-4xl mb-4">🎉</div>
-                    <h3 class="text-xl font-semibold mb-4 text-gray-900">Services Événementiels</h3>
-                    <p class="text-gray-600">Organisation d'événements privés, wedding planning, anniversaires, séminaires.</p>
-                </div>
+                
+                <!-- Autres services similaires -->
             </div>
         </section>
 
-        <section id="about" class="bg-blue-600 text-white py-16">
+        <section id="about" class="bg-cedoya-blue text-white py-16">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold mb-6">Notre Concept</h2>
+                <h2 class="text-3xl font-bold mb-6">Pourquoi CEDOYA ?</h2>
                 <p class="text-xl max-w-2xl mx-auto">
-                    CEDOYA est votre partenaire au quotidien. Nous offrons des services personnalisés 
-                    de haute qualité pour simplifier votre vie à Paris et en Rhône-Alpes.
+                    Nous sommes votre partenaire au quotidien, offrant des services personnalisés 
+                    et de haute qualité pour simplifier votre vie à Paris et en Rhône-Alpes.
                 </p>
             </div>
         </section>
 
         <section id="contact" class="container mx-auto px-4 py-16">
             <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">Contactez-nous</h2>
+                <h2 class="text-2xl font-bold text-center mb-6">Contactez-nous</h2>
                 <form action="https://formspree.io/f/VOTRE_FORMSPREE_ID" method="POST">
-                    <input type="text" name="name" placeholder="Votre Nom" required 
-                           class="w-full p-3 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <input type="email" name="email" placeholder="Votre Email" required 
-                           class="w-full p-3 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <textarea name="message" placeholder="Votre Message" required 
-                              class="w-full p-3 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4"></textarea>
-                    <button type="submit" 
-                            class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">
+                    <input type="text" name="name" placeholder="Nom" required class="w-full p-2 mb-4 border rounded">
+                    <input type="email" name="email" placeholder="Email" required class="w-full p-2 mb-4 border rounded">
+                    <textarea name="message" placeholder="Votre message" required class="w-full p-2 mb-4 border rounded" rows="4"></textarea>
+                    <button type="submit" class="w-full bg-cedoya-blue text-white py-2 rounded hover:bg-blue-700 transition">
                         Envoyer
                     </button>
                 </form>
@@ -123,45 +94,21 @@
             <div class="container mx-auto px-4 text-center">
                 <p>&copy; 2024 CEDOYA. Tous droits réservés.</p>
                 <div class="mt-4 flex justify-center space-x-4">
-                    <a href="#" class="hover:text-blue-400">Mentions légales</a>
-                    <a href="#" class="hover:text-blue-400">Politique de confidentialité</a>
+                    <a href="#" class="hover:text-cedoya-blue">Mentions légales</a>
+                    <a href="#" class="hover:text-cedoya-blue">Politique de confidentialité</a>
                 </div>
             </div>
         </footer>
     </main>
 
     <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.createElement('div');
-        mobileMenu.innerHTML = `
-            <div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden">
-                <div class="flex flex-col items-center justify-center h-full space-y-6">
-                    <a href="#services" class="text-2xl">Nos Services</a>
-                    <a href="#about" class="text-2xl">Notre Concept</a>
-                    <a href="#contact" class="text-2xl">Contact</a>
-                </div>
-            </div>
-        `;
-        document.body.appendChild(mobileMenu);
-
-        menuToggle.addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-                // Close mobile menu if open
-                const menu = document.getElementById('mobile-menu');
-                if (!menu.classList.contains('hidden')) {
-                    menu.classList.add('hidden');
-                }
             });
         });
     </script>
